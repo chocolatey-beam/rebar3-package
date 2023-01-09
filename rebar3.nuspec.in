@@ -13,7 +13,7 @@
     <packageSourceUrl>https://github.com/chocolatey-beam/rebar3-package</packageSourceUrl>
     <releaseNotes>https://github.com/erlang/rebar3/releases/tag/@@REBAR3_VERSION@@</releaseNotes>
     <tags>erlang build tools</tags>
-    <copyright>Copyright (c) 2009 Dave Smith (dizzyd@dizzyd.com)</copyright>
+    <copyright>Copyright (c) 2009 Dave Smith</copyright>
     <licenseUrl>https://github.com/erlang/rebar3/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/chocolatey-beam/rebar3-package/raw/main/rebar3-logo.png</iconUrl>
