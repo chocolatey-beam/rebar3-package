@@ -27,6 +27,8 @@
   <files>
     <file src="tools\chocolateyInstall.ps1" target="tools" />
     <file src="tools\chocolateyUninstall.ps1" target="tools" />
+    <file src="tools\rebar3.cmd" target="tools" />
+    <file src="tools\rebar3.ps1" target="tools" />
     <file src="tools\.skipAutoUninstall" target="tools" />
   </files>
 </package>

@@ -17,8 +17,8 @@ New-Variable -Name tools_path -Option Constant `
 New-Variable -Name rebar3_file -Option Constant `
   -Value (Join-Path -Path $tools_path -ChildPath 'rebar3')
 
-New-Variable -Name rebar3_ps1 -Option Constant `
-  -Value (Join-Path -Path $tools_path -ChildPath 'rebar3.ps1')
+New-Variable -Name rebar3_cmd -Option Constant `
+  -Value (Join-Path -Path $tools_path -ChildPath 'rebar3.cmd')
 
 $params = @{
   PackageName = $package
@@ -30,4 +30,4 @@ $params = @{
 
 Get-ChocolateyWebFile @params
 
-Install-BinFile -Name 'rebar3' -Path $rebar3_ps1
+Install-BinFile -Name 'rebar3' -Path $rebar3_cmd
