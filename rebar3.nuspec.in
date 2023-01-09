@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>rebar3</id>
+    <title>Rebar3</title>
+    <version>@@REBAR3_VERSION@@</version>
+    <authors>Fred Hebert, Tristan Sloughter</authors>
+    <owners>Luke Bakken, Team RabbitMQ</owners>
+    <summary>Erlang build tool.</summary>
+    <description>Rebar3 is an Erlang build tool that makes it easy to compile and test Erlang applications, port drivers and releases.</description>
+    <projectUrl>http://www.rebar3.org/</projectUrl>
+    <projectSourceUrl>https://github.com/erlang/rebar3</projectSourceUrl>
+    <packageSourceUrl>https://github.com/chocolatey-beam/rebar3-package</packageSourceUrl>
+    <releaseNotes>https://github.com/erlang/rebar3/releases/tag/@@REBAR3_VERSION@@</releaseNotes>
+    <tags>erlang build tools</tags>
+    <copyright>Copyright (c) 2009 Dave Smith (dizzyd@dizzyd.com)</copyright>
+    <licenseUrl>https://github.com/erlang/rebar3/blob/main/LICENSE</licenseUrl>
+    <iconUrl>http://i.imgur.com/9zCiL6W.png</iconUrl>
+    <docsUrl>http://www.rebar3.org/v3.0/docs</docsUrl>
+    <mailingListUrl>http://www.rebar3.org/discuss</mailingListUrl>
+    <bugTrackerUrl>https://github.com/rebar/rebar3/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="erlang" version="[23.0,26.0)" />
+    </dependencies>
+  </metadata>
+</package>
