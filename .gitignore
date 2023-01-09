@@ -1,7 +1,8 @@
 [Pp]ackages/
 tools/chocolateyInstall.ps1
 tools/chocolateyUninstall.ps1
-elixir.nuspec
+rebar3
+rebar3.nuspec
 *.nupkg
 *.exe
 *.zip

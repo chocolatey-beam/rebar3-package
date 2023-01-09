@@ -1,0 +1,33 @@
+<#
+.SYNOPSIS
+An install script for installing Rebar3 via Chocolatey
+
+.NOTES
+Author: Luke Bakken - luke@bakken.io
+Version: 1.0.0
+#>
+$ErrorActionPreference = 'Stop'
+
+New-Variable -Name package -Value 'rebar3' -Option Constant
+New-Variable -Name rebar3_version -Value '@@REBAR3_VERSION@@' -Option Constant
+
+New-Variable -Name tools_path -Option Constant `
+  -Value (Split-Path -Parent $MyInvocation.MyCommand.Definition)
+
+New-Variable -Name rebar3_file -Option Constant `
+  -Value (Join-Path -Path $tools_path -ChildPath 'rebar3')
+
+New-Variable -Name rebar3_ps1 -Option Constant `
+  -Value (Join-Path -Path $tools_path -ChildPath 'rebar3.ps1')
+
+$params = @{
+  PackageName = $package
+  CheckSum = '@@SHA256@@'
+  CheckSumType = 'sha256'
+  Url = "https://github.com/erlang/rebar3/releases/download/$rebar3_version/rebar3"
+  FileFullPath = $rebar3_file
+}
+
+Get-ChocolateyWebFile @params
+
+Install-BinFile -Name 'rebar3' -Path $rebar3_ps1
