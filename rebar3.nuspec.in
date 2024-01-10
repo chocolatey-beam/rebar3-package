@@ -21,7 +21,7 @@
     <mailingListUrl>https://github.com/erlang/rebar3#additional-resources</mailingListUrl>
     <bugTrackerUrl>https://github.com/erlang/rebar3/issues</bugTrackerUrl>
     <dependencies>
-      <dependency id="erlang" version="[23.0,26.0)" />
+      <dependency id="erlang" version="[26.0,27.0)" />
     </dependencies>
   </metadata>
   <files>
